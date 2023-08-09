@@ -84,11 +84,11 @@ async def ok(bot: Client, message: Message):
 
 
 @Client.on_message(
-    (filters.command(";_;", "") | filters.command(["sad", "cri"], ".")) & filters.me
+    (filters.command("ಥ‿ಥ","(╥﹏╥)") | filters.command(["sad", "cri"], ".")) & filters.me
 )
 async def sad_cri(bot: Client, message: Message):
     cri = ";_;"
-    for _ in range(10):
+    for _ in range(40):
         cri = cri[:-1] + "_;"
         await message.edit(cri, parse_mode=None)
 
