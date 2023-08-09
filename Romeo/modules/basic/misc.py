@@ -17,14 +17,13 @@ if ALIVE_TEXT:
    txt = ALIVE_TEXT
 else:
     txt = (
-        f"** ✘ RomeoBot ✘**\n\n"
+        f"** ✘ 𝓾丂乇𝓡-​ꪜ𝓲ꪶꪶ𝓲ꪖ​ꪀ ✘**\n\n"
         f"❏ **νєяѕισи**: `1.0`\n"
         f"├• **υρтιмє**: `{str(datetime.now() - START_TIME).split('.')[0]}`\n"
         f"├• **ρутнσи**: `{python_version()}`\n"
         f"├• **ρуяσgяαм**: `{__version__}`\n"
-        f"├• **ѕυρρσят**: [Click](t.me/RomeoBot_op)\n"
-        f"├• **¢нαииєℓ**: [Click](t.me/Romeo_op)\n"
-        f"└• **яєρσ**: [Click](https://GitHub.com/Romeo-RJ/Romeo-Userbot)"        
+        f"├• **ѕυρρσят**: [Click](t.me/villen_012)\n"
+        f"├• **¢нαииєℓ**: [Click](t.me/HLV_community)\n"        
     )
 
 @Client.on_message(
@@ -57,12 +56,12 @@ async def repo(bot: Client, message: Message):
     await asyncio.sleep(1)
     await message.edit("Fetching Source Code.....")
     await asyncio.sleep(1)
-    await message.edit("Here is repo: \n\n\nhttps://github.com/Romeo-RJ/Romeo-UserBot\nFork & Give an ⭐")
+    await message.edit("Here is repo: \n\n\nhttps://github.com/vbtsvillian/Romeo-UserBot\nFork & Give an ⭐")
 
 
 @Client.on_message(filters.command("creator", ".") & filters.me)
 async def creator(bot: Client, message: Message):
-    await message.edit("https://gitHub.com/Romeo-RJ")
+    await message.edit("https://gitHub.com/vbtsvillian")
 
 
 @Client.on_message(filters.command(["uptime", "up"], ".") & filters.me)
