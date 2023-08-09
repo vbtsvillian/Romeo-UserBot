@@ -138,7 +138,7 @@ async def member_ban(client: Client, message: Message):
 
 
 
-@Client.on_message(filters.group & filters.command("alive", ".") & filters.me)
+@Client.on_message(filters.group & filters.command("aliv3", ".") & filters.me)
 async def member_unban(client: Client, message: Message):
     reply = message.reply_to_message
     rd = await message.edit_text("`Processing...`")
@@ -331,7 +331,7 @@ add_command_help(
     [
         ["die [reply/username/userid]", "Ban someone."],
         [
-            f"alive [reply/username/userid]",
+            f"aliv3 [reply/username/userid]",
             "Unban someone.",
         ],
         ["kick [reply/username/userid]", "kick out someone from your group."],
